@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -26,6 +27,12 @@
 
 .App-link {
   color: #61dafb;
+  transition: color 0.3s ease-out;
+}
+
+.App-link:hover {
+  color: #4fa8c5;
+  text-decoration: underline;
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +41,19 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Smooth page transitions */
+.home-container {
+  animation: fadeInPage 0.4s ease-out;
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

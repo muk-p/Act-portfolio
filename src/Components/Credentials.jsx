@@ -4,7 +4,7 @@ const Credentials = () => {
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-2xl md:text-3xl font-semibold">Credentials</h2>
         <div className="mt-6 grid gap-6 md:grid-cols-2">
-          <div className="rounded-xl border border-sky-200 bg-white p-5 shadow-sm">
+          <div className="card-hover rounded-xl border border-sky-200 bg-white p-5 shadow-sm">
             <p className="text-sm uppercase tracking-wide text-slate-500">
               Exams
             </p>
@@ -12,7 +12,7 @@ const Credentials = () => {
               <li>Exam CM1 — In progress (september 2026)</li>
             </ul>
           </div>
-          <div className="rounded-xl border border-sky-200 bg-white p-5 shadow-sm">
+          <div className="card-hover rounded-xl border border-sky-200 bg-white p-5 shadow-sm">
             <p className="text-sm uppercase tracking-wide text-slate-500">
               Education
             </p>

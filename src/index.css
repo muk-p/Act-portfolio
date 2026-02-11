@@ -1,3 +1,184 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Smooth animations for mobile and desktop */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Global smooth transitions */
+  * {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  /* Fade in animation for page elements */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Section fade-in animation */
+  section {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  /* Header animations */
+  header {
+    animation: slideInFromLeft 0.7s ease-out;
+  }
+
+  header img {
+    animation: scaleIn 0.8s ease-out;
+  }
+
+  /* Stagger animations for list items */
+  .project-card,
+  .skill-item {
+    animation: fadeIn 0.5s ease-out backwards;
+  }
+
+  .project-card:nth-child(1) { animation-delay: 0.1s; }
+  .project-card:nth-child(2) { animation-delay: 0.2s; }
+  .project-card:nth-child(3) { animation-delay: 0.3s; }
+  .project-card:nth-child(n+4) { animation-delay: 0.4s; }
+
+  .skill-item:nth-child(1) { animation-delay: 0.1s; }
+  .skill-item:nth-child(2) { animation-delay: 0.2s; }
+  .skill-item:nth-child(3) { animation-delay: 0.3s; }
+  .skill-item:nth-child(n+4) { animation-delay: 0.4s; }
+
+  /* Interactive elements hover/focus */
+  button,
+  a,
+  summary,
+  input,
+  textarea {
+    @apply transition-all duration-200;
+  }
+
+  button:hover,
+  button:focus {
+    @apply scale-105;
+  }
+
+  a:not(.nav-link):hover {
+    @apply text-sky-600;
+  }
+
+  summary {
+    @apply transition-colors duration-200;
+  }
+
+  summary:hover {
+    @apply bg-slate-50;
+  }
+
+  /* Menu dropdown smooth animation */
+  details > div {
+    animation: scaleIn 0.25s ease-out;
+  }
+
+  /* Card hover effects */
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    @apply transform -translate-y-1 shadow-lg;
+  }
+
+  /* Smooth focus states for accessibility */
+  button:focus-visible,
+  a:focus-visible,
+  summary:focus-visible {
+    @apply ring-2 ring-sky-400 ring-offset-1;
+  }
+
+  /* Mobile-optimized touch feedback */
+  @media (hover: none) and (pointer: coarse) {
+    button:active {
+      @apply scale-95;
+    }
+  }
+
+  /* Header enhancements */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  @keyframes glowPulse {
+    0%, 100% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+
+  .header-profile-container img {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .header-title-container h1 {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  @keyframes pulseSlow {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  .animate-pulse-slow {
+    animation: pulseSlow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}

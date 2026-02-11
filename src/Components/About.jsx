@@ -9,7 +9,7 @@ const About = () => {
           decisions using statistical modeling, automation, and clean reporting.
         </p>
         <div className="mt-6 grid gap-4 md:grid-cols-3">
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
+          <div className="card-hover rounded-xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
             <p className="text-sm uppercase tracking-wide text-slate-500">
               Focus
             </p>
@@ -17,7 +17,7 @@ const About = () => {
               Pricing, Reserving, Risk Analytics, Data Visualization, Insurance
             </p>
           </div>
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
+          <div className="card-hover rounded-xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
             <p className="text-sm uppercase tracking-wide text-slate-500">
               Strengths
             </p>
@@ -25,7 +25,7 @@ const About = () => {
               Modeling, Data Cleaning, Communication
             </p>
           </div>
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
+          <div className="card-hover rounded-xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
             <p className="text-sm uppercase tracking-wide text-slate-500">
               Tools
             </p>

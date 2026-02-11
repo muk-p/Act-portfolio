@@ -13,25 +13,25 @@ const Contact = () => {
           <div className="mt-6 flex flex-wrap gap-3">
             <a
               href="mailto:myjohnmukara@gmail.com"
-              className="rounded-full bg-slate-900 text-white px-5 py-2 text-sm font-semibold"
+              className="rounded-full bg-slate-900 text-white px-5 py-2 text-sm font-semibold hover:bg-slate-800"
             >
               Email Me
             </a>
             <a
               href="/resume.pdf"
-              className="rounded-full border border-slate-300 px-5 py-2 text-sm text-slate-700"
+              className="rounded-full border border-slate-300 px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:border-slate-400"
             >
               Resume PDF
             </a>
             <a
               href="https://github.com/muk-p"
-              className="rounded-full border border-slate-300 px-5 py-2 text-sm text-slate-700"
+              className="rounded-full border border-slate-300 px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:border-slate-400"
             >
               GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/john-mukara-579a9438a/" 
-              className="rounded-full border border-slate-300 px-5 py-2 text-sm text-slate-700"
+              className="rounded-full border border-slate-300 px-5 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:border-slate-400"
             >
               LinkedIn
             </a>

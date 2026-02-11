@@ -48,7 +48,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="rounded-xl border border-sky-200 bg-white p-5 shadow-sm"
+              className="project-card card-hover rounded-xl border border-sky-200 bg-white p-5 shadow-sm"
             >
               <h3 className="text-lg font-semibold">{project.title}</h3>
               <p className="mt-2 text-slate-600">{project.summary}</p>

@@ -4,7 +4,7 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-2xl md:text-3xl font-semibold">Skills</h2>
         <div className="mt-6 grid gap-6 md:grid-cols-3">
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
+          <div className="skill-item card-hover rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
             <p className="text-sm uppercase tracking-wide text-slate-500">
               Tools
             </p>
@@ -13,7 +13,7 @@ const Skills = () => {
               <li>SQL, Excel</li>
             </ul>
           </div>
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
+          <div className="skill-item card-hover rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
             <p className="text-sm uppercase tracking-wide text-slate-500">
               Methods
             </p>
@@ -23,7 +23,7 @@ const Skills = () => {
               <li>Validation, Diagnostics</li>
             </ul>
           </div>
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
+          <div className="skill-item card-hover rounded-xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
             <p className="text-sm uppercase tracking-wide text-slate-500">
               Domains
             </p>
