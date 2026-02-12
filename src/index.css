@@ -166,6 +166,8 @@ html {
 
   .header-profile-container img {
     animation: float 3s ease-in-out infinite;
+    position: relative;
+    z-index: 1;
   }
 
   .header-title-container h1 {
