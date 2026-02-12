@@ -15,7 +15,7 @@ const Header = () => {
             <div className="text-sm font-semibold tracking-widest text-sky-700 uppercase">
               Portfolio
             </div>
-            <details className="relative">
+            <details className="relative z-100">
               <summary className="cursor-pointer list-none rounded-full border-2 border-sky-300 bg-white px-5 py-2 text-sm font-semibold text-slate-700 shadow-md hover:shadow-lg hover:border-sky-400 hover:bg-sky-50 transition-all duration-300">
                 Menu
               </summary>
